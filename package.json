@@ -14,6 +14,7 @@
     "types:check": "tsc --noEmit",
     "test-and-build": "yarn build && yarn test",
     "prerelease": "yarn build",
+    "prepare": "yarn build",
     "release": "changeset publish",
     "generate:examples:esm": "node packages/graphql-codegen-cli/dist/esm/bin.js --require dotenv/config --config ./dev-test/codegen.yml dotenv_config_path=dev-test/.env",
     "generate:examples:cjs": "node packages/graphql-codegen-cli/dist/cjs/bin.js --require dotenv/config --config ./dev-test/codegen.yml dotenv_config_path=dev-test/.env",
